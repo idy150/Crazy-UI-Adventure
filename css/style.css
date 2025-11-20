@@ -1,19 +1,22 @@
+:root{
+  --bg:#f3e9d2;
+  --bg-dark:#e6d6b6;
+  --accent:#007acc;
+  --hud-bg: rgba(0,0,0,0.35);
+}
+*{box-sizing:border-box}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);; /* plain white background for assets with white bg */
+  color:#222;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  position: relative;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    text-align: center;
-    padding: 40px;
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-}
 
 #snowCanvas {
     position: fixed;
@@ -25,194 +28,23 @@ body {
     pointer-events: none;
 }
 
-.container {
-    position: relative;
-    z-index: 10;
-    max-width: 600px;
-    margin: 0 auto;
-}
 
-h1 { 
-    font-size: 32px; 
-    margin-bottom: 20px; 
-    color: white !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    animation: bounce 2s infinite;
-}
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
-.face-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.face {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-}
-
-.face:hover {
-    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));
-}
-
-.cartoon-face {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: all 0.3s ease;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-}
-
-form {
-    display: inline-block;
-    text-align: left;
-    background: rgba(255, 251, 230, 0.95);
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
-    position: relative;
-    overflow: visible;
-    backdrop-filter: blur(10px);
-    min-width: 400px;
-    z-index: 1;
-}
-
-.form-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 5px;
-}
-
-label {
-    display: inline-block;
-    font-weight: bold;
-    color: #333;
-    min-width: 60px;
-    text-align: left;
-}
-
-input {
-    display: inline-block;
-    padding: 6px 8px;
-    width: 150px;
-    font-size: 14px;
-    transition: transform 0.05s linear;
-    position: relative;
-    border: 2px solid #ddd;
-    border-radius: 20px;
-    margin-left: 5px;
-}
-
-input:focus { 
-    background-color: #fff4c2; 
-    transform: scale(1.05) translate(0, 0) !important;
-    border-color: #667eea;
-    outline: none;
-}
-
-button {
-    padding: 10px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.2s ease-out;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
-}
-
-.score {
-    margin-top: 20px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-#clickCount {
-    color: #ffe66d;
-    font-size: 24px;
-}
-
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
-    
-    .face {
-        width: 180px;
-        height: 180px;
-    }
-    
-    form {
-        padding: 20px;
-        width: 100%;
-    }
-    
-    input {
-        max-width: 100%;
-    }
-}
-
-:root{
-  --bg:#f3e9d2;
-  --bg-dark:#e6d6b6;
-  --accent:#007acc;
-  --hud-bg: rgba(0,0,0,0.35);
-}
-*{box-sizing:border-box}
-/* Styles pour le jeu Tom & Jerry - ne s'appliquent que si body a la classe game-page */
-body.game-page{
-  margin:0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: #ffffff; 
-  color:#222;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-}
 header{
   padding:14px 20px;
-  background: linear-gradient(90deg,#ffffff88,var(--bg));
+  background: hsla(0, 1%, 17%, 0.916);
   display:flex;
   align-items:center;
   justify-content:space-between;
-  border-bottom:3px solid #e6e6e6;
+  border-bottom:2px solid #e6e6e6;
 }
-body.game-page h1{font-size:18px;margin:0;color:var(--accent)}
+
+
+h1{font-size:18px;margin:0;color:white}
 #hud{display:flex;gap:12px;align-items:center}
 #hud > div{
   background:var(--hud-bg);
-  color:rgb(216, 175, 121);
+  color:white;
   padding:6px 10px;
   border-radius:8px;
   font-weight:600;
@@ -235,8 +67,8 @@ body.game-page h1{font-size:18px;margin:0;color:var(--accent)}
 .character img{ display:block; width:100%; height:100%; object-fit:contain }
 
 /* per-character sizing (Tom larger than Jerry) */
-#tom{ width:99px; height:99px; }
-#jerry{ width:35px; height:35px; }
+#tom{ width:200px; height:200px; }
+#jerry{ width:130px; height:130px; }
 
 /* enable click on Jerry */
 #jerry{ pointer-events:auto; cursor:pointer }
@@ -262,6 +94,10 @@ body.game-page h1{font-size:18px;margin:0;color:var(--accent)}
   z-index:120;
   pointer-events:none;
   transition: opacity 0.5s ease;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+
 }
 .splash .splash-content{
   pointer-events:auto;
@@ -271,7 +107,7 @@ body.game-page h1{font-size:18px;margin:0;color:var(--accent)}
 .splash .char{ display:inline-block; transition: transform 0.9s ease, opacity 0.9s ease; }
 .hidden{ display:none !important; }
 /* splash button */
-.splash .btn{ display:none; margin-top:12px; padding:10px 16px; font-size:16px; border-radius:8px; background:var(--accent); color:#fff; border:none; cursor:pointer }
+.splash .btn{ display:none; margin-top:12px; padding:10px 25px; font-size:22px; border-radius:8px; background:black; color:#fff; border:none; cursor:pointer; font-weight: bold; &:hover{background-color: hsl(0, 0%, 18%); &:active{background-color: hsla(0, 1%, 29%, 0.687);}} }
 .splash .btn:active{ transform:translateY(1px) }
 
 /* footer */
@@ -279,7 +115,8 @@ footer{
   padding:8px 12px;
   font-size:13px;
   text-align:center;
-  background:linear-gradient(90deg,var(--bg),#fff);
+  background:black;
+  color: white;
   margin-top: auto;
 }
 

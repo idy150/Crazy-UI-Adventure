@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // helper: nearest cheese
   function getNearestCheese() {
     const cheeses = Array.from(document.querySelectorAll('.cheese'));
-    if (!cheeses.length) return null;
-    let best = null, bestD = Infinity;
+    if (!cheeses.length) return null;  
+    let best = null, bestD = Infinity; 
     cheeses.forEach(c => { const cx = parseFloat(c.style.left), cy = parseFloat(c.style.top); if (Number.isNaN(cx) || Number.isNaN(cy)) return; const d = Math.hypot(cx - jerryX, cy - jerryY); if (d < bestD) { bestD = d; best = { el: c, x: cx, y: cy }; } });
     return best;
   }
@@ -219,3 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+   

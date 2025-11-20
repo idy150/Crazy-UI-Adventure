@@ -6,7 +6,9 @@
   <title>Tom & Jerry</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+ <canvas id="snowCanvas"></canvas>
 <body>
+
   <header>
     <h1>Tom & Jerry</h1>
     <div id="hud">
@@ -17,14 +19,16 @@
   </header>
 
   <main id="play-area">
+    
+    
     <div id="room"></div>
 
     <div id="jerry" class="character" aria-hidden="true">
-      <img src="../assets/images/jerry.png" alt="Jerry">
+      <img src="../assets/images/jerry-2.png" alt="Jerry">
     </div>
 
     <div id="tom" class="character" aria-hidden="true">
-      <img src="../assets/images/tom.png" alt="Tom">
+      <img src="../assets/images/tom-2.png" alt="Tom">
     </div>
 
     <div id="boom" aria-hidden="true">💥</div>
@@ -36,7 +40,7 @@
            dans
             SMOOD 
             TECH.</h2>
-        <p id="splash-sub" class="hidden">Pour obtenir le bouton « Commencer », attrapez Jerry.</p>
+        <p id="splash-sub" class="hidden">Pour pouvoir « Commencer », vous devez attrapez Jerry.</p>
         <div>
           <button id="splash-start" class="btn">Jouer</button>
         </div>
@@ -53,6 +57,8 @@
     <p>Prototype pour la Nuit de l'Info — <em>Défi Innovation JavaScript</em></p>
   </footer>
 
+ 
   <script src="../js/game.js"></script>
+  <script src="../js/snow.js"></script>
 </body>
 </html>
