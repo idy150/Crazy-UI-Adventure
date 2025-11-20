@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tom & Jerry</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Tom & Jerry</h1>
+    <div id="hud">
+      <div id="timer">⏱ Temps : 0s</div>
+      <div id="countdown">⏳ Prêt : -</div>
+      <div id="score">🧀 Fromages : 0</div>
+    </div>
+  </header>
+
+  <main id="play-area">
+    <div id="room"></div>
+
+    <div id="jerry" class="character" aria-hidden="true">
+      <img src="../assets/images/jerry.png" alt="Jerry">
+    </div>
+
+    <div id="tom" class="character" aria-hidden="true">
+      <img src="../assets/images/tom.png" alt="Tom">
+    </div>
+
+    <div id="boom" aria-hidden="true">💥</div>
+
+    <!-- Splash overlay (home) -->
+    <div id="splash" class="splash" data-duration="15">
+      <div class="splash-content">
+        <h2 id="splash-title">Bienvenue dans SMOOD TECH.</h2>
+        <p id="splash-sub" class="hidden">Pour obtenir le bouton « Commencer », attrapez Jerry.</p>
+        <div>
+          <button id="splash-start" class="btn">Jouer</button>
+        </div>
+      </div>
+    </div>
+    <!-- Background audio (will be started on user gesture) -->
+    <audio id="bg-audio" preload="auto" loop>
+      <source src="../assets/sounds/course.mp3" type="audio/mpeg">
+    </audio>
+    <button id="audio-btn" class="btn" style="display:none;position:fixed;left:18px;bottom:18px;z-index:120">Activer le son</button>
+  </main>
+
+  <footer>
+    <p>Prototype pour la Nuit de l'Info — <em>Défi Innovation JavaScript</em></p>
+  </footer>
+
+  <script src="../js/game.js"></script>
+</body>
+</html>
