@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Fun - Interaction Créative</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <canvas id="snowCanvas"></canvas>
+    
+    <div class="container">
+        <h1>Mini Challenge 🎯</h1>
+
+        <div class="face-container">
+            <div class="face" id="face">
+                <img src="assets/face-neutral.svg" id="cartoonFace" class="cartoon-face" alt="cartoon face">
+            </div>
+        </div>
+
+        <form id="gameForm">
+            <div class="form-row">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="../js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="80" fill="#FFD700"/>
+  <!-- Sourcils arqués -->
+  <path d="M 50 55 Q 65 50 80 55" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 100 55 Q 115 50 130 55" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Yeux fermés (lignes courbes) -->
+  <path d="M 55 70 Q 65 75 75 70" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 105 70 Q 115 75 125 70" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Cils aux coins -->
+  <line x1="55" y1="70" x2="50" y2="65" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+  <line x1="75" y1="70" x2="80" y2="65" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+  <line x1="105" y1="70" x2="100" y2="65" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+  <line x1="125" y1="70" x2="130" y2="65" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bouche souriante -->
+  <path d="M 70 110 Q 90 120 110 110" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
