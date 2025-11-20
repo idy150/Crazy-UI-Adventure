@@ -1,0 +1,23 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="80" fill="#FFD700"/>
+  <!-- Sourcils légèrement relevés -->
+  <path d="M 50 55 Q 65 50 80 55" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 100 55 Q 115 50 130 55" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Yeux ronds avec étoiles -->
+  <circle cx="65" cy="70" r="15" fill="#000"/>
+  <circle cx="115" cy="70" r="15" fill="#000"/>
+  <!-- Étoiles dans les yeux -->
+  <g transform="translate(65, 70)">
+    <path d="M 0 -5 L 2 0 L 0 5 L -2 0 Z M -5 0 L 0 2 L 5 0 L 0 -2 Z" fill="#FFF"/>
+  </g>
+  <g transform="translate(115, 70)">
+    <path d="M 0 -5 L 2 0 L 0 5 L -2 0 Z M -5 0 L 0 2 L 5 0 L 0 -2 Z" fill="#FFF"/>
+  </g>
+  <!-- Cils longs -->
+  <line x1="55" y1="65" x2="50" y2="55" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <line x1="75" y1="65" x2="80" y2="55" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <line x1="105" y1="65" x2="100" y2="55" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <line x1="125" y1="65" x2="130" y2="55" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bouche souriante -->
+  <path d="M 70 110 Q 90 125 110 110" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

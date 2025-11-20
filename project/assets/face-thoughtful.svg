@@ -1,0 +1,14 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="80" fill="#FFD700"/>
+  <!-- Sourcils légèrement arqués -->
+  <path d="M 50 50 Q 65 45 80 50" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 100 50 Q 115 45 130 50" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Yeux regardant vers l'intérieur -->
+  <ellipse cx="65" cy="70" rx="10" ry="12" fill="#000"/>
+  <ellipse cx="115" cy="70" rx="10" ry="12" fill="#000"/>
+  <!-- Pupilles vers l'intérieur -->
+  <circle cx="70" cy="70" r="5" fill="#FFF"/>
+  <circle cx="110" cy="70" r="5" fill="#FFF"/>
+  <!-- Bouche neutre légèrement baissée -->
+  <line x1="75" y1="115" x2="105" y2="115" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+</svg>

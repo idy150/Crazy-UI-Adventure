@@ -1,0 +1,19 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="80" fill="#FFD700"/>
+  <!-- Sourcils froncés rectangulaires -->
+  <rect x="50" y="50" width="30" height="8" rx="2" fill="#000"/>
+  <rect x="100" y="50" width="30" height="8" rx="2" fill="#000"/>
+  <!-- Yeux avec regard direct -->
+  <ellipse cx="65" cy="70" rx="12" ry="10" fill="#000"/>
+  <ellipse cx="115" cy="70" rx="12" ry="10" fill="#000"/>
+  <!-- Pupilles centrales -->
+  <circle cx="65" cy="70" r="6" fill="#FFF"/>
+  <circle cx="115" cy="70" r="6" fill="#FFF"/>
+  <!-- Cils vers le bas -->
+  <line x1="58" y1="75" x2="56" y2="80" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="75" x2="74" y2="80" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="108" y1="75" x2="106" y2="80" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="122" y1="75" x2="124" y2="80" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <!-- Bouche sérieuse -->
+  <line x1="75" y1="115" x2="105" y2="115" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+</svg>

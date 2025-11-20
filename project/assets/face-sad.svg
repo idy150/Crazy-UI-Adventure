@@ -1,0 +1,19 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="80" fill="#FFD700"/>
+  <!-- Sourcils arqués vers le bas -->
+  <path d="M 50 55 Q 65 60 80 55" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 100 55 Q 115 60 130 55" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Yeux regardant vers le bas -->
+  <ellipse cx="65" cy="75" rx="10" ry="12" fill="#000"/>
+  <ellipse cx="115" cy="75" rx="10" ry="12" fill="#000"/>
+  <!-- Pupilles en forme de larme vers le bas -->
+  <ellipse cx="65" cy="80" rx="6" ry="8" fill="#FFF"/>
+  <ellipse cx="115" cy="80" rx="6" ry="8" fill="#FFF"/>
+  <!-- Cils vers le bas -->
+  <line x1="60" y1="82" x2="58" y2="88" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="82" x2="72" y2="88" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="82" x2="108" y2="88" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="82" x2="122" y2="88" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <!-- Bouche triste -->
+  <path d="M 70 120 Q 90 110 110 120" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
