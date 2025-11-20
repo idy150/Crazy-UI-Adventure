@@ -8,7 +8,7 @@
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: #ffffff; /* plain white background for assets with white bg */
+  background: #ffffff; 
   color:#222;
   height:100vh;
   display:flex;
@@ -26,7 +26,7 @@ h1{font-size:18px;margin:0;color:var(--accent)}
 #hud{display:flex;gap:12px;align-items:center}
 #hud > div{
   background:var(--hud-bg);
-  color:white;
+  color:rgb(216, 175, 121);
   padding:6px 10px;
   border-radius:8px;
   font-weight:600;
