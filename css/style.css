@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -181,3 +182,148 @@ button:hover {
         max-width: 100%;
     }
 }
+=======
+:root{
+  --bg:#f3e9d2;
+  --bg-dark:#e6d6b6;
+  --accent:#007acc;
+  --hud-bg: rgba(0,0,0,0.35);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #ffffff; /* plain white background for assets with white bg */
+  color:#222;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+header{
+  padding:14px 20px;
+  background: linear-gradient(90deg,#ffffff88,var(--bg));
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:3px solid #e6e6e6;
+}
+h1{font-size:18px;margin:0;color:var(--accent)}
+#hud{display:flex;gap:12px;align-items:center}
+#hud > div{
+  background:var(--hud-bg);
+  color:white;
+  padding:6px 10px;
+  border-radius:8px;
+  font-weight:600;
+  display:block;
+}
+
+/* characters */
+.character{
+  position:absolute;
+  width:80px;
+  height:80px;
+  transform:translate(-50%,-50%);
+  will-change: transform;
+  transition: transform 0.05s linear;
+  user-select:none;
+  pointer-events:none;
+}
+
+/* ensure image fits its container */
+.character img{ display:block; width:100%; height:100%; object-fit:contain }
+
+/* per-character sizing (Tom larger than Jerry) */
+#tom{ width:99px; height:99px; }
+#jerry{ width:35px; height:35px; }
+
+/* enable click on Jerry */
+#jerry{ pointer-events:auto; cursor:pointer }
+#tom{ pointer-events:none }
+
+/* Boom animation */
+#boom{
+  position:absolute;
+  font-size:48px;
+  transform:translate(-50%,-50%) scale(0);
+  pointer-events:none;
+  transition: transform 0.25s ease-out, opacity 0.25s;
+  opacity:0;
+}
+
+/* Splash / intro overlay */
+.splash{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:120;
+  pointer-events:none;
+  transition: opacity 0.5s ease;
+}
+.splash .splash-content{
+  pointer-events:auto;
+  text-align:center;
+  background: transparent;
+}
+.splash .char{ display:inline-block; transition: transform 0.9s ease, opacity 0.9s ease; }
+.hidden{ display:none !important; }
+/* splash button */
+.splash .btn{ display:none; margin-top:12px; padding:10px 16px; font-size:16px; border-radius:8px; background:var(--accent); color:#fff; border:none; cursor:pointer }
+.splash .btn:active{ transform:translateY(1px) }
+
+/* footer */
+footer{
+  padding:8px 12px;
+  font-size:13px;
+  text-align:center;
+  background:linear-gradient(90deg,var(--bg),#fff);
+  margin-top: auto;
+}
+
+/* responsive */
+@media (max-width:600px){
+  .character{width:48px;height:48px}
+  #tom{ width:72px; height:72px; }
+  #jerry{ width:40px; height:40px; }
+  #boom{font-size:32px}
+}
+
+/* HUD countdown styling */
+#countdown{ background:var(--hud-bg); color:#fff; padding:6px 10px; border-radius:8px; font-weight:600 }
+
+/* audio activation button */
+#audio-btn{ display:none; position:fixed; left:18px; bottom:18px; z-index:120; padding:8px 12px; border-radius:8px; background:var(--accent); color:#fff; border:none; cursor:pointer }
+#audio-btn:active{ transform:translateY(1px) }
+
+/* bouton flottant commencer - design amélioré */
+.btn.enabled{
+  background: linear-gradient(90deg, var(--bg-dark) 30%, var(--bg) 100%);
+  color: #3b2f1f;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px #c7b89566, 0 1px 0 #fff8 inset;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  transition: background 0.18s, transform 0.12s, box-shadow 0.12s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn.enabled:hover, .btn.enabled:focus{
+  background: linear-gradient(90deg, var(--bg-dark) 10%, var(--bg) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px #c7b89588, 0 2px 0 #fff8 inset;
+}
+.btn.enabled:active{
+  transform: translateY(0);
+}
+
+/* start button appearance animation */
+.start-float{ opacity:0; transform:scale(0.94); transition: opacity .28s ease, transform .28s ease; }
+.start-float.visible{ opacity:1; transform:scale(1); }
+>>>>>>> e0f5b1d048247f4ae32a8ff8b8b627986a11c8d6
