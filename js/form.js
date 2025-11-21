@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const rotation = Math.random() * 720 - 360;
                 const scale = 0.7 + Math.random() * 0.6;
                 
-                button.style.transition = "left 0.8s ease-out, top 0.8s ease-out, transform 0.8s, background 0.8s";
+                button.style.transition = "left 1.2s ease-out, top 1.2s ease-out, transform 1.2s, background 1.2s";
                 button.style.left = x + "px";
                 button.style.top = y + "px";
                 button.style.transform = `rotate(${rotation}deg) scale(${scale})`;
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (isMoving) {
                         moveButton();
                     }
-                }, 800);
+                }, 1200);
             }
             
             moveButton();
@@ -342,5 +342,10 @@ document.addEventListener("DOMContentLoaded", () => {
             
             setTimeout(() => confetti.remove(), 2000);
         }
+        
+        // Rediriger vers react.html après l'animation des confettis
+        setTimeout(() => {
+            window.location.href = "react.html";
+        }, 1500);
     });
 });
