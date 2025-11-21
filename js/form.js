@@ -210,6 +210,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     makeButtonFleeOnClick(submitBtn);
+    
+    // Empêcher l'accès au bouton via Tab
+    submitBtn.setAttribute("tabindex", "-1");
+    
+    // Permettre la soumission même quand le bouton saute
+    submitBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const form = document.getElementById("gameForm");
+        if (form) {
+            form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+        }
+    });
 
     inputs.forEach(input => {
         makeElementFlee(input);
@@ -346,6 +358,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Rediriger vers react.html après l'animation des confettis
         setTimeout(() => {
             window.location.href = "react.html";
-        }, 1500);
+        }, 2500);
     });
 });
